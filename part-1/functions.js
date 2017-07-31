@@ -5,6 +5,54 @@
 //month(date) // returns "June"
 //let christmas = new Date(2017, 11, 25) // Dec 25, 2017
 //month(christmas) // returns "December"
+let date = new Date(2017, 4, 28);
+let christmas = new Date(2017, 11, 25)
+month(date);
+month(christmas);
+
+function month(date) {
+  let monthName = date.getMonth();
+  switch (monthName) {
+    case 0:
+            monthName = "January";
+            break;
+    case 1:
+            monthName = "February";
+            break;
+    case 2:
+            monthName = "March";
+            break;
+    case 3:
+            monthName = "April";
+            break;
+    case 4:
+            monthName = "May";
+            break;
+    case 5:
+            monthName = "June";
+            break;
+    case 6:
+            monthName = "July";
+            break;
+    case 7:
+            monthName = "August";
+            break;
+    case 8:
+            monthName = "September"
+            break;
+    case 9:
+            monthName = "October"
+            break;
+    case 10:
+            monthName = "November"
+            break;
+    case 11:
+            monthName = "December"
+            break;
+  }
+  console.log(monthName);
+
+}
 
 
 /* -----------------------------------------------------------------*/
@@ -40,12 +88,3 @@ nameProps({}) // => []
 //Write a function filterBetween(array, min, max) that takes an array of strings, a min value,
 //and a max value. It returns a new array containing only the elements that come after min
 //alphabetically and before max.
-
-
-/* Example
-let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
-
-filterBetween(arr, 'deer', 'giraffe') // => ['dog']
-filterBetween(arr, 'chimp', 'lobster') // => ['dog', 'lion', 'cow']
-filterBetween(arr, 'chickadee', 'chimpanzee') // => []
-/*
