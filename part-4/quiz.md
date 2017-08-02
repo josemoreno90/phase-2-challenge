@@ -42,10 +42,21 @@ alias ls='ls -la'
 would have the ls command print the all files including hidden ones in long format "
 
 10. When a terminal command completes, how can you tell if it was successful or not?
-
+"If a command was not successful it will usually throw an error like command not found, also the command line should be visible and you should be able to type a new command..."
 11. What does your ~/.gitconfig have in it? (paste the whole file here)
+"My gitconfig file contains variables that affect my git command behaviors
+The file contains this:
+[color]
+        ui = true
+[user]
+        name = Jose Moreno
+        email = morenojr90@yahoo.com
+"
 
 12. What is the difference between a relative and absolute path?
+The difference between relative and an absolute path is that when
+using a relative path, this takes as reference the current working directory
+while absolute paths reference the root directory.
 
 13. Lets say you have the following file structure
 
@@ -57,10 +68,15 @@ would have the ls command print the all files including hidden ones in long form
         ├── README.md
         └── package.json
 And you were in the linkedin-for-dancers folder. What command would you use to copy the README.md file to the pinterest-for-dogs folder?
+"The command I would use to copy the README.md file to the pinterest-for-dogs folder is:
+'cp README.md ../pinterest-for-dogs/'."
 
 14. What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
-
+"I use 'command-p' then type the file name, to go to a file in the project I have open"
 15. What files or folders do you want all git repositories to ignore?
-
+"Some common files and folders we want ignored are
+Operating system files, Application files, Language and framework files,
+Files downloaded with package managers, Credentials...etc.
+Example of a commonly ignored file is .DS_Store and .gitignore itself."
 16. What is the main difference between Array.map and Array.forEach in JavaScript?
-k
+The difference between Array.map and Array.forEach is that Array.map will create a new array with the results of calling a provided function on every element in this array, while Array.forEach executes a provided function once per array element.  Array.forEach doesn't return anything, while Array.map will capture the return value and build a new array of those values.
