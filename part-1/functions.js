@@ -72,8 +72,8 @@ module.exports = {
   //(not inherited) of the object.
 
   nameProps: function(obj) {
-
-    return Object.keys(obj).sort();
+    const sortedObj = Object.keys(obj).sort()  //Object.keys loops through obj, and does
+    return sortedObj;                          //not include properties named with symbols.
   },
 /* -----------------------------------------------------------------*/
 
